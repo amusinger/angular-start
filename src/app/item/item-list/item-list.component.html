@@ -1,0 +1,10 @@
+<h3>Some Items</h3>
+<div class="card-list">
+  <div class="card" *ngFor="let item of items" routerLink="/items/{{item.id}}">
+    <div class="container">
+      <h4><b>{{ item.name }}</b></h4>
+      <p>{{ item.info }}</p>
+    </div>
+  </div>
+</div>
+
